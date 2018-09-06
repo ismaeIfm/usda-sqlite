@@ -83,5 +83,4 @@ console.log(JSON.stringify(b)); //note this add " characters to the beginning an
 ```
 
 ## Attribution
-Adapted from <https://github.com/czarandy/usda> for scripts to run on Mac OS X with SR28 release.
-Adapted from https://github.com/alyssaq/usda-sqlite for missing tables.
+Adapted from <https://github.com/czarandy/usda> for scripts to run on Mac OS X with SR28 release and from https://github.com/alyssaq/usda-sqlite to add missing tables.
