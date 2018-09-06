@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS `factor`;
 CREATE TABLE `factor` (
-  id int PRIMARY KEY NOT NULL,
+  id char(5) PRIMARY KEY NOT NULL,
   description text NOT NULL DEFAULT ''
 );
 

@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS `factor_link`;
 CREATE TABLE `factor_link` (
-  food_id int REFERENCES food(id) NOT NULL,
-  factor_id int REFERENCES factor(id) NOT NULL,
+  food_id char(5) REFERENCES food(id) NOT NULL,
+  factor char(5) REFERENCES factor(id) NOT NULL,
   PRIMARY KEY(food_id, factor_id)
 
 );

@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS `food_group`;
 CREATE TABLE `food_group` (
-  id int PRIMARY KEY NOT NULL,
+  id char(4) PRIMARY KEY NOT NULL,
   name text NOT NULL
 );
 

@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS `source`;
 CREATE TABLE `source` (
-  id int PRIMARY KEY NOT NULL,
+  id char(6) PRIMARY KEY NOT NULL,
   authors text,
   title text NOT NULL DEFAULT '',
   year text,
