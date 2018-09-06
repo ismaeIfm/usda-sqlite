@@ -22,6 +22,27 @@ echo "Loading nutrient..."
 sqlite3 $1 < load_nutrient.sql
 sqlite3 $1 < load_common_nutrient.sql
 
+echo "Loading derivation code..."
+sqlite3 $1 < load_derivation_code.sql
+
+echo "Loading factor..."
+sqlite3 $1 < load_factor.sql
+
+echo "Loading factor link..."
+sqlite3 $1 < load_factor_link.sql
+
+echo "Loading data source..."
+sqlite3 $1 < load_data_source.sql
+
+echo "Loading data source link..."
+sqlite3 $1 < load_data_source_link.sql
+
+echo "Loading footnote..."
+sqlite3 $1 < load_footnote.sql
+
+echo "Loading source code..."
+sqlite3 $1 < load_source_code.sql
+
 echo "Loading nutrition..."
 sqlite3 $1 < load_nutrition.sql
 
