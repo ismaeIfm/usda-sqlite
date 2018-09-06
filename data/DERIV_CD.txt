@@ -21,6 +21,7 @@
 ~CAAN~^~Calculated from different food; From average values for food category; Ash; Retention factors not used~
 ~CAFN~^~Calculated from different food; From average values for food category; Fat; Retention factors not used~
 ~CASN~^~Calculated from different food; From average values for food category; Solids; Retention factors not used~
+~CASY~^~Calculated from different food; From average values for food category; Solids; Retention factors used~
 ~CAZN~^~Calculated from different food; From average values for food category; No adjustment; Retention factors not used~
 ~DA~^~Concentration adjustment using factor; derived from analytical data~
 ~DI~^~Concentration adjustment using factor; derived from imputed data~
@@ -34,7 +35,8 @@
 ~MC~^~Manufacturer supplied; Calculated by manufacturer or unknown if analytical or calculated~
 ~ML~^~Manufacturer supplied; Value upon which manufacturer based label claim for fortified/enriched nutrient~
 ~NC~^~Nutrient that is based on other nutrient/s; calculated rather than analyzed~
-~NP~^~Nutrient that is based on other nutrient/s; calculated by difference or summed (with or without activity factors)~
+~NP~^~Nutrient that is based on other nutrient/s; calculated by difference or summed (with or without activity factors)
+Ex. Pr~
 ~NR~^~Nutrient that is based on other nutrient/s; value used directly, ex. Nut.#204 from Nut.#298~
 ~O~^~Other procedure used from imputing~
 ~PAE~^~Based on physical composition; Derived from analytical data; Estimated physical composition~
