@@ -5,7 +5,7 @@ CREATE TABLE `footnote` (
   type text NOT NULL DEFAULT '',
   nutrno char(3) REFERENCES nutrient(nutrno) NOT NULL,
   footnote_text text NOT NULL DEFAULT '',
-  PRIMARY KEY(ndbno, id, nutrno)
+  PRIMARY KEY(ndbno, footnote_no, nutrno)
 );
 
 .separator "^"
