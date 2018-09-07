@@ -12,4 +12,4 @@ CREATE TABLE `data_source` (
 );
 
 .separator "^"
-.import data/DATA_SRC.txt source
+.import data/DATA_SRC.txt data_source
