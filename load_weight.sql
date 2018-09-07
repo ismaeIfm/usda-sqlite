@@ -1,13 +1,13 @@
 DROP TABLE IF EXISTS `weight`;
 CREATE TABLE `weight` (
-    food_id char(5) REFERENCES food(id) NOT NULL,
+    ndbno char(5) REFERENCES food(ndbno) NOT NULL,
     sequence_num int NOT NULL,
     amount float NOT NULL,
     description text NOT NULL,
     gm_weight float NOT NULL,
     num_data_pts int,
     std_dev float,
-    PRIMARY KEY(food_id, sequence_num)
+    PRIMARY KEY(ndbno, sequence_num)
 );
 
 .separator "^"

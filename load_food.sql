@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS `food`;
 CREATE TABLE `food` (
-  id char(5) PRIMARY KEY NOT NULL,
-  food_group_id char(4) REFERENCES food_group(id) NOT NULL,
+  ndbno char(5) PRIMARY KEY NOT NULL,
+  food_group_code char(4) REFERENCES food_group(food_group_code) NOT NULL,
   long_desc text NOT NULL DEFAULT '',
   short_desc text NOT NULL DEFAULT '',
   common_names text NOT NULL DEFAULT '',

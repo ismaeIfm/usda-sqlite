@@ -34,11 +34,11 @@ You can also upload the created `*.sql3` file to https://sqliteonline.com/, savi
 
 - `SELECT * FROM nutrient;` - print out all nutrient data
 - `SELECT Count(*) FROM food;` - 8789 - all foods
-- `SELECT Count(*) FROM food where food_group_id !=300 and food_group_id !=3500` - 8257 - Exclude all baby food and Native American food
+- `SELECT Count(*) FROM food where food_group_code !=300 and food_group_code !=3500` - 8257 - Exclude all baby food and Native American food
 - `SELECT id FROM food;` - [ [food.id] ]
 - `SELECT id,long_desc FROM food;` - [ [food.id, food.long_desc] ]
 - `SELECT id,name FROM nutrient;` - [ [nutrient.id, nutrient.name] ]
-- `SELECT count(*),food_group.name FROM food inner join food_group on food.food_group_id=food_group.id group by food_group_id; ` - the count of all the foods in each food group
+- `SELECT count(*),food_group.name FROM food inner join food_group on food.food_group_code=food_group.id group by food_group_code; ` - the count of all the foods in each food group
 
 Every food's serving size, if it has one
 
@@ -48,7 +48,7 @@ SELECT
   food.long_desc,
   gm_weight
 FROM food
-INNER JOIN weight ON weight.food_id=food.id
+INNER JOIN weight ON weight.ndbno=food.id
 where weight.description=='serving';
 ```
 
@@ -60,8 +60,8 @@ SELECT
   nutrient.id,
   nutrition.amount
 FROM nutrition
-INNER JOIN food ON nutrition.food_id=food.id
-INNER JOIN nutrient ON nutrition.nutrient_id=nutrient.id;
+INNER JOIN food ON nutrition.ndbno=food.id
+INNER JOIN nutrient ON nutrition.nutrno=nutrient.id;
 ```
 
 ### Post processing

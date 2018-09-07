@@ -15,9 +15,9 @@ c.execute("""
     SUM(nutrition.amount)
   FROM food
   JOIN nutrition
-  ON nutrition.food_id = food.id
+  ON nutrition.ndbno = food.id
   WHERE food.long_desc LIKE ?
-  AND nutrition.nutrient_id IN (621, 629)
+  AND nutrition.nutrno IN (621, 629)
   GROUP BY food.long_desc
 """, ('%' + sys.argv[1] + '%',))
 

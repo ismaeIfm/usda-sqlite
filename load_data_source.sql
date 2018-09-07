@@ -1,6 +1,6 @@
-DROP TABLE IF EXISTS `source`;
-CREATE TABLE `source` (
-  id char(6) PRIMARY KEY NOT NULL,
+DROP TABLE IF EXISTS `data_source`;
+CREATE TABLE `data_source` (
+  data_source_id char(6) PRIMARY KEY NOT NULL,
   authors text,
   title text NOT NULL DEFAULT '',
   year text,

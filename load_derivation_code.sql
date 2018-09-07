@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS `derivation_code`;
 CREATE TABLE `derivation_code` (
-  id char(4) PRIMARY KEY NOT NULL,
+  derivation_code char(4) PRIMARY KEY NOT NULL,
   description text
 );
 
