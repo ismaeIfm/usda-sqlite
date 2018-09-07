@@ -3,7 +3,7 @@ CREATE TABLE `nutrition` (
   food_id char(5) REFERENCES food(id) NOT NULL,
   nutrient_id char(3) REFERENCES nutrient(id) NOT NULL,
   amount float NOT NULL,
-  num_data_points int NOT NULL,
+  num_data_pts int NOT NULL,
   std_error float,
   source_code_id char(2) REFERENCES sources(id),
   derivation_code_id char(4) REFERENCES derivation_code(id),
